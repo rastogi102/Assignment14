@@ -9,50 +9,6 @@ namespace ConAppAssignment14
 {
     internal class Program
     {
-        static void Main(string[] args)
-        {
-            int[] arrayToSort = GenerateRandomArray(10); // Change the array size as required
-            Console.WriteLine("Original Array:");
-            PrintArray(arrayToSort);
-
-            // Perform Bubble Sort and measure its performance
-            int[] bubbleSortedArray = (int[])arrayToSort.Clone();
-            var sw = Stopwatch.StartNew();
-            BubbleSort(bubbleSortedArray);
-            sw.Stop();
-            Console.WriteLine("\nBubble Sorted Array:");
-            PrintArray(bubbleSortedArray);
-            Console.WriteLine($"Time taken by Bubble Sort: {sw.Elapsed.TotalMilliseconds} ms");
-
-            // Perform Insertion Sort and measure its performance
-            int[] insertionSortedArray = (int[])arrayToSort.Clone();
-            sw.Restart();
-            InsertionSort(insertionSortedArray);
-            sw.Stop();
-            Console.WriteLine("\nInsertion Sorted Array:");
-            PrintArray(insertionSortedArray);
-            Console.WriteLine($"Time taken by Insertion Sort: {sw.Elapsed.TotalMilliseconds} ms");
-
-            // Perform Selection Sort and measure its performance
-            int[] selectionSortedArray = (int[])arrayToSort.Clone();
-            sw.Restart();
-            SelectionSort(selectionSortedArray);
-            sw.Stop();
-            Console.WriteLine("\nSelection Sorted Array:");
-            PrintArray(selectionSortedArray);
-            Console.WriteLine($"Time taken by Selection Sort: {sw.Elapsed.TotalMilliseconds} ms");
-
-            // Perform Merge Sort and measure its performance
-            int[] mergeSortedArray = (int[])arrayToSort.Clone();
-            sw.Restart();
-            MergeSort(mergeSortedArray);
-            sw.Stop();
-            Console.WriteLine("\nMerge Sorted Array:");
-            PrintArray(mergeSortedArray);
-            Console.WriteLine($"Time taken by Merge Sort: {sw.Elapsed.TotalMilliseconds} ms");
-            Console.ReadKey();
-        }
-
         // Bubble Sort Algorithm
         static void BubbleSort(int[] arr)
         {
@@ -204,6 +160,51 @@ namespace ConAppAssignment14
             }
             Console.WriteLine();
         }
+        static void Main(string[] args)
+        {
+            int[] arrayToSort = GenerateRandomArray(10); // Change the array size as required
+            Console.WriteLine("Original Array:");
+            PrintArray(arrayToSort);
+
+            // Perform Bubble Sort and measure its performance
+            int[] bubbleSortedArray = (int[])arrayToSort.Clone();
+            var sw = Stopwatch.StartNew();
+            BubbleSort(bubbleSortedArray);
+            sw.Stop();
+            Console.WriteLine("\nBubble Sorted Array:");
+            PrintArray(bubbleSortedArray);
+            Console.WriteLine($"Time taken by Bubble Sort: {sw.Elapsed.TotalMilliseconds} ms");
+
+            // Perform Insertion Sort and measure its performance
+            int[] insertionSortedArray = (int[])arrayToSort.Clone();
+            sw.Restart();
+            InsertionSort(insertionSortedArray);
+            sw.Stop();
+            Console.WriteLine("\nInsertion Sorted Array:");
+            PrintArray(insertionSortedArray);
+            Console.WriteLine($"Time taken by Insertion Sort: {sw.Elapsed.TotalMilliseconds} ms");
+
+            // Perform Selection Sort and measure its performance
+            int[] selectionSortedArray = (int[])arrayToSort.Clone();
+            sw.Restart();
+            SelectionSort(selectionSortedArray);
+            sw.Stop();
+            Console.WriteLine("\nSelection Sorted Array:");
+            PrintArray(selectionSortedArray);
+            Console.WriteLine($"Time taken by Selection Sort: {sw.Elapsed.TotalMilliseconds} ms");
+
+            // Perform Merge Sort and measure its performance
+            int[] mergeSortedArray = (int[])arrayToSort.Clone();
+            sw.Restart();
+            MergeSort(mergeSortedArray);
+            sw.Stop();
+            Console.WriteLine("\nMerge Sorted Array:");
+            PrintArray(mergeSortedArray);
+            Console.WriteLine($"Time taken by Merge Sort: {sw.Elapsed.TotalMilliseconds} ms");
+            Console.ReadKey();
+        }
+
+       
     }
 }
     
