@@ -1,0 +1,35 @@
+Time Complexity Analysis:
+
+Bubble Sort: The time complexity of the Bubble Sort algorithm is O(n^2) in the worst and average cases. In the best case, it can be O(n) if the array is already sorted.
+
+Insertion Sort: The time complexity of the Insertion Sort algorithm is also O(n^2) in the worst and average cases. In the best case, it can be O(n) if the array is already sorted.
+
+Selection Sort: The time complexity of the Selection Sort algorithm is O(n^2) in all cases. It does not perform better on a sorted array.
+
+Merge Sort: The time complexity of the Merge Sort algorithm is O(n log n) in all cases, making it more efficient than the other three algorithms for larger arrays.
+
+Comparison:
+
+Bubble Sort, Insertion Sort, and Selection Sort have similar time complexities and are inefficient for large arrays. 
+They are suitable for small arrays or nearly sorted arrays.
+
+Merge Sort, on the other hand, is more efficient with a time complexity of O(n log n). 
+It performs well even for large datasets and is considered one of the most efficient sorting algorithms.
+
+Advantages and Disadvantages of Bubble Sort:
+
+Advantages:
+
+Simple to implement and understand.
+In-place sorting algorithm, meaning it does not require additional memory for sorting.
+Best-case time complexity is O(n), making it suitable for small arrays with few elements out of place.
+Disadvantages:
+
+Inefficient for larger arrays due to its O(n^2) worst-case time complexity.
+Not stable - the relative order of equal elements might change during sorting.
+Conclusion:
+
+Bubble Sort is a simple sorting algorithm to implement and understand. 
+However, it is inefficient for larger datasets, and there are better alternatives like Merge Sort, which offer better performance with O(n log n) time complexity. 
+For small arrays or nearly sorted data, Bubble Sort might still be considered due to its ease of implementation and lower overhead. 
+For more substantial datasets, Merge Sort or other efficient sorting algorithms should be preferred.
